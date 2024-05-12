@@ -1,0 +1,19 @@
+header
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-links
+  {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1;
+  }
+
+  .nav-link
+  {
+    text-decoration: none;
+  }
