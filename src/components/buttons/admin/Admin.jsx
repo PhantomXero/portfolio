@@ -4,7 +4,7 @@ import { Button, ButtonGroup } from "@material-ui/core";
 
 function Admin() {
   return (
-    <ButtonGroup>
+    <ButtonGroup variant="outlined" color="secondary">
       <Button type="button" id="login" className="left">
         Log in
       </Button>

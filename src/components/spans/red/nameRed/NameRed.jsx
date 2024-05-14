@@ -1,7 +1,12 @@
+import { Typography } from "@material-ui/core";
 import React from "react";
 
 function NameRed() {
-  return <span className="red">Banda</span>;
+  return (
+    <Typography variant="h5" className="red" color="secondary">
+      Banda
+    </Typography>
+  );
 }
 
 export default NameRed;

@@ -1,41 +1,38 @@
+import { Button, ButtonGroup } from "@material-ui/core";
+import {
+  Build,
+  Home,
+  Person,
+  QuestionAnswer,
+  Star,
+  Work,
+} from "@material-ui/icons";
 import React from "react";
+
+let bk = "secondary";
 
 function Nav() {
   return (
-    <div className="links">
-      <ul className="list">
-        <li className="h-link" id="link_1">
-          <a className="" href="/index.html">
-            Home
-          </a>
-        </li>
-        <li className="h-link" id="link_2">
-          <a className="" href="/public/views/portfilo.html">
-            Portfolio
-          </a>
-        </li>
-        <li className="h-link" id="link_3">
-          <a className="" href="/public/views/service.html">
-            Services
-          </a>
-        </li>
-        <li className="h-link" id="link_4">
-          <a className="" href="/public/views/about.html">
-            About
-          </a>
-        </li>
-        <li className="h-link" id="link_5">
-          <a className="" href="/public/views/faq.html">
-            FAQ
-          </a>
-        </li>
-        <li className="h-link" id="link_8">
-          <a className="" href="/public/views/reviews.html">
-            Reviews
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ButtonGroup variant="outlined" className="links" color={bk}>
+      <Button href="/" startIcon={<Home color={bk} />}>
+        Home
+      </Button>
+      <Button href="/portfolio" startIcon={<Work color={bk} />}>
+        Portfolio
+      </Button>
+      <Button href="/services" startIcon={<Build color={bk} />}>
+        Services
+      </Button>
+      <Button href="/about" startIcon={<Person color={bk} />}>
+        About
+      </Button>
+      <Button href="/contact" startIcon={<QuestionAnswer color={bk} />}>
+        Contact
+      </Button>
+      <Button href="/reviews" startIcon={<Star color={bk} />}>
+        Reviews
+      </Button>
+    </ButtonGroup>
   );
 }
 
